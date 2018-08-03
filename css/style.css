@@ -1,0 +1,76 @@
+section {
+  width: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  background-color: lightgrey;
+  background-image: url("http://theia-roleplay.fr/wp-content/uploads/2018/05/cropped-2018-05-04_13.19.41.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  header img {
+    padding: 5rem 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; }
+
+nav {
+  position: static;
+  background-color: lightblue;
+  text-transform: uppercase;
+  box-shadow: 0px 7px 19px -1px rgba(0, 0, 0, 0.17); }
+
+main {
+  margin: 1rem 0;
+  display: grid;
+  grid-row-gap: 1rem;
+  padding: 1rem; }
+  main article {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid #dddddd;
+    text-align: center; }
+    main article small {
+      color: #f8d89b; }
+      main article small span {
+        color: black; }
+  main aside .nb_joueurs, main aside .evenements {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #dddddd; }
+  main aside .nb_joueurs {
+    margin-bottom: 1rem; }
+
+footer {
+  padding: 2rem;
+  height: 80px;
+  text-align: center;
+  color: white;
+  background-color: #1e1e1e; }
+
+@media screen and (min-width: 720px) {
+  main {
+    grid-template-areas: "top_article aside" "last_article aside";
+    padding: 0 5rem;
+    display: grid;
+    grid-column-gap: 1rem; }
+    main .top_article {
+      grid-area: top_article; }
+    main .last_article {
+      grid-area: last_article; }
+    main aside {
+      grid-area: aside;
+      grid-column: 3/4; }
+      main aside .nb_joueurs, main aside .evenements {
+        padding: 2rem;
+        text-align: center; }
+      main aside .nb_joueurs {
+        margin-bottom: 1rem; } }
+@media screen and (min-width: 900px) {
+  main {
+    padding: 0 15rem; } }
+
+/*# sourceMappingURL=style.css.map */

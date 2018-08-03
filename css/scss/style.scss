@@ -1,0 +1,103 @@
+section{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    background-color: lightgrey;
+    background-image: url("http://theia-roleplay.fr/wp-content/uploads/2018/05/cropped-2018-05-04_13.19.41.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    img{
+        padding: 5rem 0;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin:auto;
+    }
+}
+
+nav{
+    position:  static;
+    background-color: lightblue;
+    text-transform: uppercase;
+    box-shadow: 0px 7px 19px -1px rgba(0,0,0,0.17);
+
+}
+
+main{
+    margin: 1rem 0;
+    display: grid;
+    grid-row-gap: 1rem;
+     padding: 1rem;
+
+    article{
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.01);
+        border: 1px solid #dddddd;
+        text-align: center;
+        small{
+            color: #f8d89b;
+            span{
+                color: black;
+            }
+        }
+    }
+    aside{
+        .nb_joueurs, .evenements{
+            background-color: rgba(0, 0, 0, 0.01);
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        .nb_joueurs{
+            margin-bottom: 1rem;
+        }
+}
+}
+
+
+footer{
+    padding: 2rem;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+
+
+// ===========MEDIA========== //
+@media screen and (min-width: 720px) {
+    main{
+        grid-template-areas: "top_article aside"
+                            "last_article aside";
+        padding: 0 5rem;
+        display: grid;
+        grid-column-gap: 1rem;
+        .top_article{
+            grid-area: top_article;
+        }
+        .last_article{
+            grid-area: last_article;
+        }
+        aside{
+            grid-area: aside;
+            .nb_joueurs, .evenements{
+                padding: 2rem;
+                text-align: center;
+            }
+            .nb_joueurs{
+                margin-bottom: 1rem;
+            }
+        grid-column: 3/4;
+    }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main{
+        padding: 0 15rem;
+    }
+}
